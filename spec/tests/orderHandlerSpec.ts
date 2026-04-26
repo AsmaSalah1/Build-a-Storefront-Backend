@@ -1,9 +1,8 @@
-// spec/tests/orderHandlerSpec.ts (الكود المصحح)
 
 import supertest from "supertest";
 import app from "../../src/server";
-import { UserModel, User } from "../../src/models/UserModel"; // 🔑 استيراد User
-import { OrderModel, Order } from "../../src/models/OrderModel"; // 🔑 استيراد Order
+import { UserModel, User } from "../../src/models/UserModel"; 
+import { OrderModel, Order } from "../../src/models/OrderModel"; 
 import createTables from "../helpers/databaseCleanup";
 
 const request = supertest(app);
